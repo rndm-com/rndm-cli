@@ -3,10 +3,10 @@ const Process = require('child_process');
 
 const example = (cmd) => {
   const current = process.cwd();
-  const client = [current, 'node_modules', '.bin', 'rndm-client'].join('/');
+  const client = [current, 'node_modules', '.bin', '@rndm/client'].join('/');
   const isRNDM = fs.existsSync(client);
   if (!isRNDM) {
-    console.log('No client installed. To use the RNDM Client please run: \'npm install --save rndm-client\'');
+    console.log('No client installed. To use the RNDM Client please run: \'npm install --save @rndm/client\'');
     return;
   }
   const options = {

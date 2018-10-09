@@ -4,7 +4,7 @@ const fs = require('fs');
 const program = require('commander');
 const { init , quickstart} = require('./actions/init');
 const example = require('./actions/example');
-const name = 'rndm-client';
+const name = '@rndm/client';
 
 const split = (i = '') => i.split(',');
 
