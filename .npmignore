@@ -1,0 +1,13 @@
+#tests
+__tests__
+coverage
+jest.config.js
+
+#linters
+.eslintrc
+
+#editor settings
+.idea
+
+# OSX
+.DS_Store
