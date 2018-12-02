@@ -20,17 +20,19 @@ const changeProjectName = (name) => {
 const addPackages = (name, { packages = [] }, callback = noop) => {
   request("https://rndm-com.firebaseio.com/api/packages.json", (error, response, body) => {
     const json = JSON.parse(body);
-    const keys = Object.keys(json);
-    const available = packages.filter(p => keys.includes(p));
-    const packagePath = [current, name, 'package.json'].join('/');
-    const packageJSON = require(packagePath);
-    const { dependencies } = packageJSON;
-    available.forEach(p => {
-      const { local } = json[p];
-      dependencies[p] = local;
-    });
-    fs.writeFileSync(packagePath, JSON.stringify(packageJSON, null, 2));
-    callback();
+    if (json) {
+      const keys = Object.keys(json);
+      const available = packages.filter(p => keys.includes(p));
+      const packagePath = [current, name, 'package.json'].join('/');
+      const packageJSON = require(packagePath);
+      const { dependencies } = packageJSON;
+      available.forEach(p => {
+        const { local } = json[p];
+        dependencies[p] = local;
+      });
+      fs.writeFileSync(packagePath, JSON.stringify(packageJSON, null, 2));
+      callback();
+    }
   });
 };
 
