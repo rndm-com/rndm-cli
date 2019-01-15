@@ -1,4 +1,4 @@
-# RNDM Commandline Interface (CLI)
+# RNDM Command Line Interface (CLI)
 
 ## Introduction
 
@@ -16,7 +16,7 @@ npm install -g @rndm/cli
 
 ## Documentation
 
-For further assistance, you can run the below command to get commandline help:
+For further assistance, you can run the below command to get command line help:
 
 ```sh
 rndm -h
@@ -24,7 +24,7 @@ rndm -h
 
 ### init
 
-The init command is designed to create a new project based on the latest version of [RNDM React Cross Platform](https://github.com/rndm-com/rndm-cli). Since this temlate will regularly updated to addrss new features and potential issues, this command has been left extremely simple, to allow one time installation.
+The init command is designed to create a new project based on the latest version of [RNDM React Cross Platform](https://github.com/rndm-com/rndm-cli). Since this template will regularly updated to address new features and potential issues, this command has been left extremely simple, to allow one time installation.
 
 **Options**:
 
@@ -62,7 +62,7 @@ rndm init example
 
 ### example
 
-The example command is a helper command. Many RNDM Renderer Plugins and Presets come with helpful templates that give you a headstart on how to use their integration functionality.
+The example command is a helper command. Many RNDM Renderer Plugins and Presets come with helpful templates that give you a head start on how to use their integration functionality.
 
 This command, will both show you the available examples that can be created, as well as run the respective plugin command to do so.
 
