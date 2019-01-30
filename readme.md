@@ -24,7 +24,7 @@ rndm -h
 
 ### init
 
-The init command is designed to create a new project based on the latest version of [RNDM React Cross Platform](https://github.com/rndm-com/rndm-cli). Since this template will regularly updated to address new features and potential issues, this command has been left extremely simple, to allow one time installation.
+The init command is designed to create a new project based on the latest version of [RNDM React Cross Platform](https://www.rndm.com/docs/rndm-react-xp). Since this template will regularly updated to address new features and potential issues, this command has been left extremely simple, to allow one time installation.
 
 **Options**:
 
@@ -35,6 +35,19 @@ The init command is designed to create a new project based on the latest version
 **Command**:
 ```sh
 rndm init example
+```
+
+### Plugin
+
+The plugin command is designed to create a new plugin project based on the latest version of [RNDM React Cross Platform](https://www.rndm.com/docs/rndm-render-template). Since this template will regularly updated to address new features and potential issues, this command has been left extremely simple, to allow one time installation.
+
+**Options**:
+
+\<name\>: The folder name into which you want the template cloned. This is a mandatory field. This will be prepended with 'rndm-render-plugin-'
+
+**Command**:
+```sh
+rndm plugin example
 ```
 
 ### quickstart
