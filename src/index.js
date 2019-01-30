@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
 const program = require('commander');
-const { init , quickstart} = require('./actions/init');
+const { init , quickstart } = require('./actions/init');
+const { plugin } = require('./actions/plugin');
 const example = require('./actions/example');
-const name = '@rndm/client';
 
 const split = (i = '') => i.split(',');
 
@@ -16,6 +15,10 @@ program
   .command('init <name>')
   .option('-p, --packages <pkgs>', 'Determines which RNDM plugins and/or presets to install with the project. Default is none.', split)
   .action(init);
+
+program
+  .command('plugin <name>')
+  .action(plugin);
 
 program
   .command('quickstart <name>')
@@ -32,3 +35,4 @@ program.parse(process.argv);
 
 module.exports.init = init;
 module.exports.quickstart = quickstart;
+module.exports.plugin = plugin;
