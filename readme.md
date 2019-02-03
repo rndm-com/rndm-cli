@@ -1,8 +1,8 @@
-# RNDM Command Line Interface (CLI)
+# [RNDM](https://www.rndm.com) Command Line Interface (CLI)
 
 ## Introduction
 
-RNDM CLI is a utility installation tool for RNDM Packages, that allows for a simple and easy to follow integration. This package works with the [RNDM React Cross Platform](https://github.com/rndm-com/rndm-cli) template as well as the RNDM Renderer suite of tools, plugins and presets.
+RNDM CLI is a utility installation tool for RNDM Packages, that allows for a simple and easy to follow integration. This package works with the [RNDM React Cross Platform](https://www.rndm.com/docs/rndm-react-xp) template as well as the RNDM Renderer suite of tools, plugins and presets.
 
 ## Installation
 
@@ -39,7 +39,7 @@ rndm init example
 
 ### Plugin
 
-The plugin command is designed to create a new plugin project based on the latest version of [RNDM React Cross Platform](https://www.rndm.com/docs/rndm-render-template). Since this template will regularly updated to address new features and potential issues, this command has been left extremely simple, to allow one time installation.
+The plugin command is designed to create a new plugin project based on the latest version of [RNDM Render Plugin Template](https://www.rndm.com/docs/rndm-render-template). Since this template will regularly updated to address new features and potential issues, this command has been left extremely simple, to allow one time installation.
 
 **Options**:
 
